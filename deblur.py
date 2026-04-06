@@ -1,21 +1,4 @@
-"""
-Image Deblurring using Least Squares and Linear Transformations
-Linear Algebra Mini Project
 
-Pipeline (follows the doc exactly):
-  Step 1  – Image as matrix
-  Step 2  – Build blur operator A (convolution as linear transform)
-  Step 3  – Analyse the system AX = B via column norms (no full Gaussian on mega-matrix)
-  Step 4  – Column / Null space interpretation
-  Step 5  – Remove redundancy (rank estimation via SVD)
-  Step 6  – Orthogonalise dominant basis via Gram-Schmidt (on truncated singular vectors)
-  Step 7  – Least-squares recovery: X̂ = (AᵀA)⁻¹Aᵀb  (solved channel-wise with pinv)
-  Step 8  – Eigenvalue decomposition of AᵀA → identify signal vs noise components
-  Step 9  – Spectral / dimensionality reduction: keep top-k eigenvectors, discard noise
-  Final   – Display blurred  vs  deblurred side-by-side + save output image
-
-No ML, no Neural Networks. Pure NumPy linear algebra.
-"""
 
 import sys
 import os
