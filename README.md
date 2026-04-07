@@ -111,7 +111,8 @@ X̂ = (AᵀA)⁻¹ Aᵀ B
 
 ---
 
-## 📁 Project Structure
+## Project Structure
+
 image-deblurring/
 │── main.py / notebook.ipynb
 │── images/
@@ -119,15 +120,13 @@ image-deblurring/
 │── README.md
 
 
----
-
-## 💡 Key Insight
+## Key Insight
 Blurring causes **loss of information**, making exact recovery impossible.  
 Using linear algebra, we compute the **best approximation** rather than exact reconstruction.
 
 ---
 
-## 📌 Future Improvements
+## Future Improvements
 - Use advanced deconvolution techniques
 - Implement regularization (Ridge/Lasso)
 - Extend to color images
